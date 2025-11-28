@@ -1,5 +1,3 @@
-# JavaScript Journey
-
 ## 11.1 Introduction
 
 Consider an organization that provides a Website that allows its customers to view their products. The company has received frequent customer feedbacks to provide the shopping facility online. Therefore, the company has decided to add the shopping facility in their Website by creating dynamic Web pages. These Web pages will allow the user to shop for the products online. For example, details such as credit card number, email, and phone number entered by the customer must be in a proper format. Further, the developer also requires to retrieve the chosen products and their quantity to calculate the total cost.
@@ -27,7 +25,7 @@ There are two types of scripting languages, described as follows:
 
 JavaScript is a scripting language that allows you to build dynamic Web pages by ensuring maximum user interactivity. JavaScript language is an object-based language, which means that it provides objects for specifying functionalities. In real life, an object is a visible entity such as a car or a table. Every object has some characteristics and is capable of performing certain actions. Similarly, in a scripting language, an object has a unique identity, state, and behaviour.
 
-The identity of the object distinguishes it from the other objects of the same type. The state of the object refers to its characteristics, whereas the behaviour of the object consists of its possible actions. The object stores its identity and state in fields (also called variables) and exposes its behaviour through functions (actions).
+The identity of the object distinguishes it from the other objects of the same type. The state of the object refers to its characteristics, whereas the behavior of the object consists of its possible actions. The object stores its identity and state in fields (also called variables) and exposes its behaviour through functions (actions).
 
 | **Car**                           | **Table**              |
 | --------------------------------- | ---------------------- |
@@ -43,19 +41,19 @@ The first version of JavaScript was developed by Brendan Eich at Netscape in 199
 
 Table 11.1 lists various versions of JavaScript language, also called as ECMAScript.
 
-| **Edition** | **Name**            | **Description**                                                                                                                                                                         |
-| ----------- | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1           | ECMAScript 1 (1997) | First edition                                                                                                                                                                           |
-| 2           | ECMAScript 2 (1998) | Supported by Internet Explorer from version 4.0                                                                                                                                         |
-| 3           | ECMAScript 3 (1999) | Added regular expressions and try/catch and was supported by Internet Explorer 5.0, Netscape Navigator 1.0, and Opera 5.0 onwards                                                       |
+| **Edition** | **Name**            | **Description**                                                                                                                                                                             |
+| ----------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1           | ECMAScript 1 (1997) | First edition                                                                                                                                                                               |
+| 2           | ECMAScript 2 (1998) | Supported by Internet Explorer from version 4.0                                                                                                                                             |
+| 3           | ECMAScript 3 (1999) | Added regular expressions and try/catch and was supported by Internet Explorer 5.0, Netscape Navigator 1.0, and Opera 5.0 onwards                                                           |
 | 5           | ECMAScript 5 (2009) | Added features such as ‘strict mode’, JSON support, `String.trim()`, `Array.isArray()`, and Array iteration methods. Is supported by Internet Explorer 6.0 and Mozilla Firefox 1.0 onwards. |
 | 6           | ECMAScript 2015     | Was published in 2015 and added features such as `let` and `const`, default parameter values, `Array.find()`, and `Array.findIndex()`                                                       |
-| 7           | ECMAScript 2016     | Was published in 2016 and added exponential operator and `Array.prototype.includes`                                                                                                       |
+| 7           | ECMAScript 2016     | Was published in 2016 and added exponential operator and `Array.prototype.includes`                                                                                                         |
 | 8           | ECMAScript 2017     | Was published in 2017 and added features such as string padding, `Object.entries`, `Object.values`, async functions, and shared memory                                                      |
-| 9           | ECMAScript 2018     | Was published in 2018 and added features such as rest/spread properties, asynchronous iteration, and `Promise.finally()`                                                                  |
-| 10          | ECMAScript 2019     | Was published in 2019 and added features such as `Array.prototype.flat`, `Array.prototype.flatMap`, and `Object.fromEntries`                                                                  |
-| 11          | ECMAScript 2020     | Was published in June 2020 and introduces a BIGINT primitive type for arbitrary-sized integers, nullish coalescing operator, and globalThis object.                                     |
-| 12          | ECMAScript 2021     | Was published in June 2021 and introduces `replaceAll` method for Strings, `Promise.any.AggregateError`, `WeakRef`, and other features.                                                       |
+| 9           | ECMAScript 2018     | Was published in 2018 and added features such as rest/spread properties, asynchronous iteration, and `Promise.finally()`                                                                    |
+| 10          | ECMAScript 2019     | Was published in 2019 and added features such as `Array.prototype.flat`, `Array.prototype.flatMap`, and `Object.fromEntries`                                                                |
+| 11          | ECMAScript 2020     | Was published in June 2020 and introduces a BIGINT primitive type for arbitrary-sized integers, nullish coalescing operator, and globalThis object.                                         |
+| 12          | ECMAScript 2021     | Was published in June 2021 and introduces `replaceAll` method for Strings, `Promise.any.AggregateError`, `WeakRef`, and other features.                                                     |
 
 ---
 
@@ -75,6 +73,80 @@ A server-side JavaScript can interact with the database, fetch the required info
 
 ---
 
-## Keep in Mind
+## 11.7 Script Tag
+The `<script>` tag defines a script for an HTML page to make them interactive. The browser that supports scripts interprets and executes the script specified under the `<script>` tag when the page loads in the browser. You can directly insert a JavaScript code under the `<script>` tag. You can define multiple `<script>` tags either in the `<head>` or in the `<body>` elements of an HTML page. In HTML5, the type attribute `type="text/javascript"` specifying the scripting language is no longer required as it is optional.
 
-This **JavaScript Journey** repository is continuously evolving! The content here is updated on a daily basis, so make sure to check back regularly for new lessons, examples, and improvements. As we move forward, we’ll be adding more advanced topics, tips, and hands-on exercises to help you master JavaScript step by step. Stay tuned!
+```
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Document</title>
+		<script>
+			document.write("Hello World!");
+		</script>
+	</head>
+<body>
+	...
+</body>
+</html>
+```
+
+There are two main purpose of the `<script>` tag, which are as follows:
+- Identifies a given segment of script in the HTML page.
+- Loads an external script file.
+
+## 11.8 Variables in JavaScript
+A variable refers to a symbolic name that holds a value, which keeps changing. For example, age of a student and salary of an employee can be treated as variables. A real-life example for variables includes the variables used in algebraic expressions that store values.
+
+In JavaScript, a variable is a unique location in the computer's memory that stores a value and has a unique name. The name of the variable is used to access and read the value stored in it. A variable can store different types of data such as a character, a number, or a string. Therefore, a variable acts as container for saving and changing values during execution of the script.
+
+## 11.8.1 Declaring Variables
+Declaring a variable refers to creating a variable by specifying the variable name. For example, you can create a variable named `studName` to store the name of a student. Here, the variable name `studName` is referred to as a identifier. In JavaScript, the var keyword is used to create a variable by allocating memory to it. A keyword is a reserved word that holds a special meaning in JavaScript.
+
+You can initialize the variable at the time of creating the variable or later. Initilization refers to the task of assigning a value to a variable. once the variable is initialized, you can change the value of a variable as required.
+
+Variables allow keeping track of data during the execution of the script. While referring to a variable, you are referring to the value of that variable. In JavaScript, you can declare and initialize multiple variables in a single statement.
+
+Following syntax demonstrates how to declare variables in JavaScript:
+**Syntax**
+```
+var <variableName>;
+```
+where,
+```
+var: Is the keyword in JavaScript
+variableName: Is a valid variable name.
+```
+
+Following syntax demonstrates how to initalize variables in JavaScript:
+**Syntax**
+```
+<variableName> = <value>;
+```
+where,
+= : Is the assignment operator used to assign values.
+value: Is the data that is to be stored in the variable.
+
+Following syntax demonstrates how to declare and initialize multiple variables in a single statement, which are separated by commas.
+**Syntax**
+```
+var <variableName> = <value>, <variableName2> = <value2>;
+```
+
+Code Snippet 2 declares two variables namely, `studID` and `studName` and assign values to them.
+**Code Snippet 2**
+```
+var studID;
+var studName;
+studID = 50;
+studName = "Abdullah";
+```
+
+This code assigns values to `studID` and `studName` variables by using the assignment operator `=`. The value named `Abdullah` is specified within double quotes.
+
+Code Snippet 3 demonstrates how to declare and initialize multiple variables in a single statement in JavaScript.
+
+**Code Snippet 3**
+`var studName = Abdullah, studAge = 15;`
+
+---
