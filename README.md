@@ -48,14 +48,14 @@ Table 11.1 lists various versions of JavaScript language, also called as ECMAScr
 | 1           | ECMAScript 1 (1997) | First edition                                                                                                                                                                           |
 | 2           | ECMAScript 2 (1998) | Supported by Internet Explorer from version 4.0                                                                                                                                         |
 | 3           | ECMAScript 3 (1999) | Added regular expressions and try/catch and was supported by Internet Explorer 5.0, Netscape Navigator 1.0, and Opera 5.0 onwards                                                       |
-| 5           | ECMAScript 5 (2009) | Added features such as ‘strict mode’, JSON support, String.trim(), Array.isArray(), and Array iteration methods. Is supported by Internet Explorer 6.0 and Mozilla Firefox 1.0 onwards. |
-| 6           | ECMAScript 2015     | Was published in 2015 and added features such as `let` and `const`, default parameter values, Array.find(), and Array.findIndex()                                                       |
-| 7           | ECMAScript 2016     | Was published in 2016 and added exponential operator and Array.prototype.includes                                                                                                       |
-| 8           | ECMAScript 2017     | Was published in 2017 and added features such as string padding, Object.entries, Object.values, async functions, and shared memory                                                      |
-| 9           | ECMAScript 2018     | Was published in 2018 and added features such as rest/spread properties, asynchronous iteration, and Promise.finally()                                                                  |
-| 10          | ECMAScript 2019     | Was published in 2019 and added features such as Array.prototype.flat, Array.prototype.flatMap, and Object.fromEntries                                                                  |
+| 5           | ECMAScript 5 (2009) | Added features such as ‘strict mode’, JSON support, `String.trim()`, `Array.isArray()`, and Array iteration methods. Is supported by Internet Explorer 6.0 and Mozilla Firefox 1.0 onwards. |
+| 6           | ECMAScript 2015     | Was published in 2015 and added features such as `let` and `const`, default parameter values, `Array.find()`, and `Array.findIndex()`                                                       |
+| 7           | ECMAScript 2016     | Was published in 2016 and added exponential operator and `Array.prototype.includes`                                                                                                       |
+| 8           | ECMAScript 2017     | Was published in 2017 and added features such as string padding, `Object.entries`, `Object.values`, async functions, and shared memory                                                      |
+| 9           | ECMAScript 2018     | Was published in 2018 and added features such as rest/spread properties, asynchronous iteration, and `Promise.finally()`                                                                  |
+| 10          | ECMAScript 2019     | Was published in 2019 and added features such as `Array.prototype.flat`, `Array.prototype.flatMap`, and `Object.fromEntries`                                                                  |
 | 11          | ECMAScript 2020     | Was published in June 2020 and introduces a BIGINT primitive type for arbitrary-sized integers, nullish coalescing operator, and globalThis object.                                     |
-| 12          | ECMAScript 2021     | Was published in June 2021 and introduces replaceAll method for Strings, Promise.any.AggregateError, WeakRef, and other features.                                                       |
+| 12          | ECMAScript 2021     | Was published in June 2021 and introduces `replaceAll` method for Strings, `Promise.any.AggregateError`, `WeakRef`, and other features.                                                       |
 
 ---
 
@@ -72,10 +72,6 @@ A JavaScript is either embedded in an HTML page or is separately defined in a fi
 A server-side JavaScript (SSJS) is executed by the Web server when an HTML page is requested by a user. The output of a server-side JavaScript is sent to the user and is displayed by the browser. In this case, a user might not be aware that a script was executed on the server to produce the desirable output.
 
 A server-side JavaScript can interact with the database, fetch the required information specific to the user, and display it to the user. This means that server-side scripting fulfills the goal of providing dynamic content in a web page. Unlike client-side JavaScript, HTML pages using server-side JavaScript are compiled into bytecode files on the server. Compilation is a process of converting the code into machine-independent code. This machine-independent code is known as the bytecode, which is an executable file. The Web server runs this executable to generate the desired output.
-
----
-
-Sure! Here's how you can add a note at the end of the `README.md` to inform readers that the content will be regularly updated:
 
 ---
 
