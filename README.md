@@ -147,6 +147,44 @@ This code assigns values to `studID` and `studName` variables by using the assig
 Code Snippet 3 demonstrates how to declare and initialize multiple variables in a single statement in JavaScript.
 
 **Code Snippet 3**
-`var studName = Abdullah, studAge = 15;`
+`var studName = 'Abdullah', studAge = 15;`
+
+---
+## 11.8.2 Variable Naming Rules
+You cannot refer to a variable until it is created in JavaScript. JavaScript is a case-sensitive language. This means that if you specify `X` and `x` as variables, both of them are treated as two different variables. Similarly, in JavaScript, there are certain rules, which must be followed while specifying variables names. These rules for a variable name are as follows:
+
+- Can consist of digits, underscore, and alphabets.
+- Must begin with a letter or the underscore character.
+- Cannot begin with a number and cannot contain any punctuation marks.
+- Cannot contain any kind of special characters such as `+`, `*`, `%` and so on.
+- Cannot contain spaces.
+- Cannot be a JavaScript keyword.
+
+It is recommended to give meaningful names to variables such that the name determines the kind of data stored in the variable.
+
+## 11.9 Data Types in JavaScript
+A Web page designer can store different types of values such as numbers, characters, or strings in variables. However, the Web page designer must know what kind of data a particular variable is expected to store. To identify the type of data that can be stored in a variable , JavaScript provides different data types.
+
+A Web page designer is not required to specify the data type while declaring variables. Due to this, JavaScript is referred to as the loosely typed language. This means that a variable holding a number can also hold a string value later. The values of variables are automatically mapped to their data types when the script is executed in the browser.
+
+Data types in JavaScript are classified into two broad categories namely, primitive and composite data types. Primitive data types contain only a single value, whereas the composite data types contain a group values.
+
+## 11.9.1 Primitive Data Types
+A primitive data type contains a single literal value such as number or a string. A literal is a static value that you can assign to variables.
+
+| Primitive Data Type | Description                                                                                                                                                                                                                                    |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `boolean`           | Contains only two values namely, true or false.                                                                                                                                                                                                |
+| `null`              | Contains only one value namely, null. A variable of this value specifies that the variable has no value. This null value is keyword and it is not the same as the value, zero                                                                  |
+| `number`            | Contains positive and negative numbers and numbers with decimal point. Some of the valid examples include 6, 7.5, -8, 7.5e-3 and so on.                                                                                                        |
+| `string`            | Contains alphanumeric characters in single or double quotation marks. The single quotes is used to represent a string, which itself consists of quotation marks. A set of quotes without any characters within it is known as the null string. |
+## 11.9.2 Composite Data Types
+A composite data type stores a collection of multiple related values, unlike primitive data types. In JavaScript, all composite data types are treated as objects. A composite data type can be either predefined or user-defined in JavaScript.
+
+| Data Types | Description                                                                                                                                             |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Objects    | Refers to a collection of properties and functions. Properties specify the characteristics and functions determine the behavior of a JavaScript object. |
+| Functions  | Refers to a collection of statements, which are instructions to achieve a specific task                                                                 |
+| Arrays     | Refers to a collection of values stored in a adjacent memory locations.                                                                                 |
 
 ---
