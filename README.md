@@ -188,3 +188,27 @@ A composite data type stores a collection of multiple related values, unlike pri
 | Arrays     | Refers to a collection of values stored in a adjacent memory locations.                                                                                 |
 
 ---
+## Escape Sequence Characters
+An escape sequence character is a special character that is preceded by a backslash (\). Escape sequence characters are used to display special non-printing characters such as a tab space, a single space, or a backspace. These non-printing characters help in displaying formatted output to the user to maximize readability. The backslash character specifies that the following character denotes a non-printing character. For example, `\t` is an escape sequence characters must always be enclosed in double quotes.
+
+| Escape Sequence | Non-Printing Character                                                                                                                                      |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `\b`            | Back space                                                                                                                                                  |
+| `\f`            | Form feed                                                                                                                                                   |
+| `\n`            | New line                                                                                                                                                    |
+| `\r`            | Carriage return                                                                                                                                             |
+| `\t`            | Horizontal tab                                                                                                                                              |
+| `\'`            | Single quote                                                                                                                                                |
+| `\"`            | Double quote                                                                                                                                                |
+| `\\`            | Backslash                                                                                                                                                   |
+| `\aaa`          | Matches a Latin-1 encoding character using octal representation, where aaa are three octal numbers. For example, \251 represents the copyright symbol.      |
+| `\xaa`          | Matches a Latin-1 encoding character using hexadecimal representation, where aa are two hexadecimal numbers. For example, \x61 represents the character 'a' |
+| `\uaaaa`        | Represents the Unicode encoding character, where aaaa are four hexadecimal numbers. For example, the character \u0020 represents a space.                   |
+```
+<script>
+	document.write("You must have a \u0022credit card\u0022, if you want to shop     on the \'Internet\'.");
+</script>
+```
+The code uses a Unicode encoding character namely, `\u00022`, which represents double quotes. These open and close double quotes will contain the term `credit card`. Similarly, the word `Internet` will be placed in single quotes. The single quotes are specified using the backslash character.
+
+> NOTE - An encoding scheme specifies how to represent character data in terms of their acceptable range, maximum number of characters, and patterns. Unicode is a character set that contains all the international characters required for processing information. Latin 1 is the encoding scheme for English and Western European languages on the Internet.
