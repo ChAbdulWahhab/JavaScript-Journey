@@ -229,6 +229,100 @@ A function is a piece of code that performs some operations on variables to fulf
 > **NOTE** - The `\n` character, when used in the `alert()` function, prints the information on a new line. This does not happen when the `\n` character is used with the `write` methods of the `document` object.
 
 ---
+# Operators – Introduction
+
+In JavaScript, **operators** are special symbols or keywords used to perform operations on values and variables. They help in executing tasks such as calculations, assignments, comparisons, and logical decision-making. Most standard programming books categorize JavaScript operators into four primary groups, which are explained below.
+
+## **1. Arithmetic Operators**
+
+Arithmetic operators are used to perform basic mathematical operations on numbers. They allow you to create numeric expressions involving addition, subtraction, multiplication, division, and more.
+
+**Common Arithmetic Operators:**
+
+* `+` (Addition)
+
+* `-` (Subtraction)
+
+* `*` (Multiplication)
+
+* `/` (Division)
+
+* `%` (Modulus – returns remainder)
+
+* `**` (Exponentiation – power)
+
+* `++` (Increment)
+
+* `--` (Decrement)
+
+These operators are essential for performing calculations and manipulating numeric data in programs.
+
+---
+
+## **2. Assignment Operators**
+
+Assignment operators are used to assign values to variables. They can also combine assignment with another operation, allowing concise and readable code.
+
+**Common Assignment Operators:**
+
+* `=` (Simple Assignment)
+
+* `+=` (Add and assign)
+
+* `-=` (Subtract and assign)
+
+* `*=` (Multiply and assign)
+
+* `/=` (Divide and assign)
+
+* `%=` (Modulus and assign)
+
+* `**=` (Exponent and assign)
+
+Programming books often refer to these as “shorthand assignment operators” because they simplify expressions.
+
+---
+## 3. Comparison Operators
+
+Comparison operators compare two values and return a **boolean result** (`true` or `false`).
+These operators are widely used in decision-making constructs such as `if`, `else`, and loops.
+
+**Common Comparison Operators:**
+
+* `==` (Equal to – compares values)
+
+* `===` (Strict equal to – compares value and type)
+
+* `!=` (Not equal to)
+
+* `!==` (Strict not equal to)
+
+* `>` (Greater than)
+
+* `<` (Less than)
+
+* `>=` (Greater than or equal to)
+
+* `<=` (Less than or equal to)
+
+---
+## **4. Logical Operators**
+
+Logical operators are used to combine multiple conditions or to apply logical reasoning in a program.
+
+They operate on boolean values and return either `true` or `false`.
+
+**Common Logical Operators:**
+
+* `&&` (Logical AND) — returns true only if all conditions are true
+
+* `||` (Logical OR) — returns true if at least one condition is true
+
+* `!` (Logical NOT) — reverses a boolean value (`true` becomes `false` and vice versa)
+
+These operators play a key role in controlling the flow of a program.
+
+---
 ## 11.14 Events
 Consider a scenario where you want to design an Employee registration Web form. This form allows the users to fill in appropriate details and click the submit button. When the user clicks the submit button, the form data is submitted to the server for validation purposes. In this case, when the user clicks the button, and event is generated. The submission of form refers to the action performed on click of the button.
 
