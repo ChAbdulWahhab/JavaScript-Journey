@@ -435,3 +435,25 @@ Different keyboard events are as follows:
 - **Onkeypress**
 	- Occurs when a key is pressed and released.
 ---
+## Mouse Events
+Mouse events occur when the user clicks the mouse button.
+
+| Events        | Description                                                        |
+| ------------- | ------------------------------------------------------------------ |
+| `onmousedown` | Occurs when the button is pressed.                                 |
+| `onmouseup`   | Occurs when the mouse button is released.                          |
+| `onclick`     | Occurs when the mouse button is pressed and released.              |
+| `ondbclick`   | Occurs when the mouse button is double-clicked.                    |
+| `onmousemove` | Occurs when the mouse pointer is moved from one location to other. |
+| `onmouseover` | Occurs when the mouse pointer is moved over the element.           |
+| `onmouseout`  | Occurs when the mouse pointer is moved out of the element.         |
+## Focus and Selection Events
+The focus events determine the activation of various elements that uses the `input` element. It allows you to set or reset focus for different `input` elements. The selection events occur when an element or a part of an element within a Web page is selected.
+
+| Events          | Description                                     |
+| --------------- | ----------------------------------------------- |
+| `onfocus`       | Occurs when an element receives focus.          |
+| `onblur`        | Occurs when an element loses focus.             |
+| `onselectstart` | Occurs when the selection of an element starts. |
+| `onselect`      | Occurs when the present selection changes.      |
+| `ondragstart`   | Occurs when the selected element is moved.      |
