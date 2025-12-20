@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else & Ternary</title>
+</head>
+
+<body>
+    <script>
+
+        var age = parseInt(prompt("Enter Your Age"));
+        status = (isNaN(age) === "number" && (age >= 18) ? "eligible" : "not eligible");
+        document.write("Your are " + age + " years old, so you are " + status + " to vote.");
+
+        var marks = parseInt(prompt("Enter Marks (0-100):"));
+
+        let grade = isNaN(marks) || marks < 0 || marks > 100 ? "Error: Please enter a valid number between 0 and 100."
+                : marks >= 90 ? "Grade: A+ | Reward: Laptop"
+                : marks >= 50 ? "Grade: B | Reward: Chocolate"
+                : "Grade: F | Status: Failed";
+
+        document.write(grade);
+
+
+
+        let text = prompt("Enter Text");
+
+        let dictionaryWord = (text === "i am") ? "I'm"
+                : text === "you are" ? "You're"
+                : text;
+
+        document.write(dictionaryWord);
+
+        // if (isNaN(marks) || marks < 0 || marks > 100) {
+        //     document.write("Error: Please enter a valid number between 0 and 100.");
+        // } 
+        // else if (marks >= 90) {
+        //     document.write("Grade: A+ | Reward: Laptop");
+        // } 
+        // else if (marks >= 50) {
+        //     document.write("Grade: B | Reward: Chocolate");
+        // } 
+        // else {
+        //     document.write("Grade: F | Status: Failed");
+        // }
+
+    </script>
+</body>
+
+</html>
