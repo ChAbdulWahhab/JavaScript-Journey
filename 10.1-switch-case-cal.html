@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case | Calculator</title>
+    <style>
+        button {
+            width: 50px;
+            margin: 2px 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cal">
+        <input id="displayArea" placeholder="Display" readonly>
+        <div class="btn">
+
+            <button>AC</button>
+            <button>C</button>
+            <button>ER</button><br>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>/</button><br>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>*</button><br>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>-</button><br>
+            <button>0</button>
+            <button>.</button>
+            <button>+</button>
+            <button>=</button>
+        </div>
+
+    </div>
+
+
+
+    <script>
+
+        let displayArea = document.getElementById("displayArea");
+        let buttons = document.querySelectorAll("button");
+
+        let content = "";
+
+        buttons.forEach(btn => {
+            btn.addEventListener("click", () => {
+
+                let value = btn.textContent;
+
+                switch (value) {
+                    case "=":
+                        try {
+                            content = eval(content);
+                            displayArea.value = "=" + content;
+                        }
+                        catch {
+                            content.textContent = "Error";
+                            content = "";
+                        }
+                        break;
+
+                    case "AC":
+                        content = "";
+                        displayArea.value = "";
+                        break;
+                        
+                    case "C":
+                        content = "";
+                        displayArea.value = "";
+                        break;
+
+                    case "ER":
+                        content = content.slice(0, -1);
+                        displayArea.value = content;
+                        break;
+
+                    default:
+                        content += value;
+                        displayArea.value = content;
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>
