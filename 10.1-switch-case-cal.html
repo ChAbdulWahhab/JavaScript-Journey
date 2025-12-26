@@ -18,29 +18,29 @@
         <input id="displayArea" placeholder="Display" readonly>
         <div class="btn">
 
-            <button>AC</button>
-            <button>C</button>
-            <button>%</button>
-            <button>
+            <button data-action="clear">AC</button>
+            <button data-action="clear">C</button>
+            <button data-action="operator">%</button>
+            <button data-action="erase">
                 <i class="bi bi-backspace-fill"></i>
             </button>
             <br>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>/</button><br>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>*</button><br>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>-</button><br>
-            <button>0</button>
-            <button>.</button>
-            <button>+</button>
-            <button>=</button>
+            <button data-action="number">7</button>
+            <button data-action="number">8</button>
+            <button data-action="number">9</button>
+            <button data-action="number">/</button><br>
+            <button data-action="number">4</button>
+            <button data-action="number">5</button>
+            <button data-action="number">6</button>
+            <button data-action="operator">X</button><br>
+            <button data-action="number">1</button>
+            <button data-action="number">2</button>
+            <button data-action="number">3</button>
+            <button data-action="operator">-</button><br>
+            <button data-action="number">0</button>
+            <button data-action="number">.</button>
+            <button data-action="operator">+</button>
+            <button data-action="equals">=</button>
         </div>
 
     </div>
@@ -57,39 +57,39 @@
         buttons.forEach(btn => {
             btn.addEventListener("click", () => {
 
+                let action = btn.getAttribute("data-action");
                 let value = btn.textContent;
 
-                switch (value) {
-                    case "=":
+                switch (action) {
+                    case "equals":
                         try {
                             content = eval(content);
                             displayArea.value = "=" + content;
                         }
                         catch {
-                            content.textContent = "Error";
+                            displayArea.value = "Error";
                             content = "";
                         }
                         break;
 
-                    case "AC":
-                        content = "";
-                        displayArea.value = "";
-                        break;
-                        
-                    case "C":
-                        content = "";
-                        displayArea.value = "";
-                        break;
-
-                    case "ER":
+                    case "erase":
                         content = content.slice(0, -1);
                         displayArea.value = content;
                         break;
 
-                    default:
-                        content += value;
+                    case "clear":
+                        content = "";
                         displayArea.value = content;
+                        break;
+
+                    default:
+                        value === "X"
+                        ? (content += "*")
+                        : (content += value)
+                        
+                    displayArea.value = content;
                 }
+
             });
         });
 
