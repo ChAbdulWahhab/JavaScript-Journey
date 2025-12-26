@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Variables 2.0</title>
-</head>
-<body>
-<!-- ... start ... -->
-<script>
-
 // console.log(cnic);
 
 // var cnic = 4220143727615;
@@ -53,8 +42,3 @@ name = "Mehwish";
 // }
 
 // console.log(phoneNumber);
-
-</script>
-<!-- ... end ... -->
-</body>
-</html>

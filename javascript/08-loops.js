@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loops</title>
-</head>
-<body>
-<script>
-
-<!--For Loop-->
-
 // tabno = parseInt(prompt("Enter Table Number"));
 
 // for (i = 1; i <= 10; i++) {
@@ -57,20 +45,15 @@ CONTUNUE EXAMPLE =>
 
 for (let i = 1; i <= 10; i++) {
 
-if (i === 5) {
-    console.log("Roll 5 absent, skip.");
-    continue;
-}
+    if (i === 5) {
+        console.log("Roll 5 absent, skip.");
+        continue;
+    }
 
-console.log("Roll present:", i);
+    console.log("Roll present:", i);
 }
 
 
 
 // break
 // continue
-
-
-</script>
-</body>
-</html>

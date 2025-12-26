@@ -1,0 +1,27 @@
+#parent {
+    width: 300px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.child {
+    padding: 4px;
+    background-color: white;
+}
+
+#textBox {
+    border: 1px solid gray;
+    outline: none;
+    width: 300px;
+    border-radius: 6px;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+#textBox:focus {
+    border: 1px solid dodgerblue;
+}

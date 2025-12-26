@@ -1,0 +1,79 @@
+// Variable Type
+// Variable Name
+// Variable Value -> Data Types
+// ----------------------------
+// Data Types
+// Primitive -> boolean, null, number, string
+// Composite -> Objects, Functions, Arrays
+
+var salary;
+
+name = "Zainab"; // String
+age = 11; // Number
+cnic = null; // Null
+isVerified = true; // Boolean
+salary = 12000; // Number Also
+
+// document.writeln(typeof(name));
+// document.writeln(typeof(age));
+// document.writeln(typeof(cnic));
+// document.writeln(typeof(isVerified));
+
+studentDetails = {
+    name: "Arham",
+    age: 18,
+    school: "TBISS",
+    subject: "Computer",
+    f_phone_number: 923001234567
+}
+
+employeeDetails = {
+    name: "Shah Zubair",
+    martial_status: "Married",
+    father_name: "Murtaza Kamal",
+    position: "Tea Maker",
+    salary: 14999,
+    phone_number: "+923347328923",
+    currency: "PKR"
+}
+
+console.log(employeeDetails.father_name);
+
+fruits = [
+    'Orange',
+    'Mango',
+    'Peach',
+    true,
+    1200,
+    null,
+    false
+]
+
+document.write("1. " + fruits[0] + "<br>");
+document.write("2. " + fruits[1] + "<br>");
+document.write("3. " + fruits[2] + "<br>");
+document.write("4. " + fruits[3] + "<br>");
+document.write("5. " + fruits[4] + "<br>");
+document.write("6. " + fruits[5] + "<br>");
+document.write("7. " + fruits[6] + "<br>");
+
+// document.write("Name: " + employeeDetails.name);
+// document.write(JSON.stringify(employeeDetails));
+// console.log(employeeDetails.name);
+
+// Nested Object
+
+students = {
+    std1: {
+        name: "Arham Chandio",
+        age: 12,
+        rollno: 1234
+    },
+    std2: {
+        name: "Majid Chandio",
+        age: 12,
+        rollno: 1234
+    }
+}
+
+document.write(students.std1);

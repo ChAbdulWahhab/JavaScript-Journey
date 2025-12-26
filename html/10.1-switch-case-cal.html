@@ -4,13 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/10.1-switch-case-cal.css">
     <title>Switch Case | Calculator</title>
-    <style>
-        button {
-            width: 40px;
-            margin: 2px 0px;
-        }
-    </style>
 </head>
 <body>
 
@@ -45,54 +40,6 @@
 
     </div>
 
-
-
-    <script>
-
-        let displayArea = document.getElementById("displayArea");
-        let buttons = document.querySelectorAll("button");
-
-        let content = "";
-
-        buttons.forEach(btn => {
-            btn.addEventListener("click", () => {
-
-                let action = btn.getAttribute("data-action");
-                let value = btn.textContent;
-
-                switch (action) {
-                    case "equals":
-                        try {
-                            content = eval(content);
-                            displayArea.value = "=" + content;
-                        }
-                        catch {
-                            displayArea.value = "Error";
-                            content = "";
-                        }
-                        break;
-
-                    case "erase":
-                        content = content.slice(0, -1);
-                        displayArea.value = content;
-                        break;
-
-                    case "clear":
-                        content = "";
-                        displayArea.value = content;
-                        break;
-
-                    default:
-                        value === "X"
-                        ? (content += "*")
-                        : (content += value)
-                        
-                    displayArea.value = content;
-                }
-
-            });
-        });
-
-    </script>
+<script src="/javascript/10.1-switch-case-cal.js"></script>
 </body>
 </html>
