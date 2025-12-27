@@ -1,4 +1,4 @@
-# Switch Case
+## Switch Case
 
 ### **Special Concept: Fall-through Logic**
 
