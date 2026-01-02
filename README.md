@@ -25,31 +25,45 @@ A comprehensive guide for learning JavaScript fundamentals through an organized,
 
    * Commonly used functions like `alert`, `prompt`, and `parseInt`
 
-5. **[Operators & Expressions](docs/05-operators.md)**
+   * Commonly used functions like `alert`, `prompt`, and `parseInt`
 
-   * Arithmetic, Assignment, Comparison, and Logical Operators
-   * Increment/Decrement and the Ternary Operator
-
-6. **[Events & Interactivity](docs/06-events.md)**
+5. **[Events & Interactivity](docs/05-events.md)**
 
    * Event Handling and Bubbling
-   * Keyboard, Mouse, and Focus events
+   * Understanding the event life cycle
 
-7. **[Control Flow: Loops](docs/07-loops.md)**
+6. **[Mouse Events](docs/06-mouse-events.md)**
+
+   * `onclick`, `onmouseover`, `onmousemove`
+   * Tracking cursor position
+
+7. **[Increment & Decrement Operators](docs/07-increment-decrement.md)**
+
+   * Pre-increment vs Post-increment
+   * Understanding operator precedence
+
+8. **[Control Flow: Loops](docs/08-loops.md)**
 
    * `for`, `while`, and `do...while` loops
    * Choosing the right loop for your task
 
-8. **[Control Flow: Switch Case](docs/08-switch-case.md)**
+9. **[Control Flow: If-Else](docs/09-if-else.md)**
+
+   * `if`, `else`, and `else if` ladder
+   * Nested conditions and Ternary Operator
+
+10. **[Control Flow: Switch Case](docs/10-switch-case.md)**
 
    * `switch` statement syntax
    * `case`, `break`, and `default`
-   * Real-world examples and comparisons with `if...else`
 
-9. **[String Methods](docs/09-string-methods.md)**
+11. **[String Methods](docs/11-string-methods.md)**
 
    * Most commonly used methods like `slice`, `replace`, `split`, etc.
    * Understanding string immutability
+
+
+
 
 ---
 
