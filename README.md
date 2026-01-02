@@ -46,6 +46,11 @@ A comprehensive guide for learning JavaScript fundamentals through an organized,
    * `case`, `break`, and `default`
    * Real-world examples and comparisons with `if...else`
 
+9. **[String Methods](docs/09-string-methods.md)**
+
+   * Most commonly used methods like `slice`, `replace`, `split`, etc.
+   * Understanding string immutability
+
 ---
 
 ## How to Use This Guide
