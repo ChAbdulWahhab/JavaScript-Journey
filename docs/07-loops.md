@@ -9,41 +9,31 @@ In JavaScript, there are three fundamental types of loops used to control this f
 The `for` loop is used when you know exactly how many times you want to run a task. It is highly structured and keeps all the "logistics"—where to start, when to stop, and how to change—in one single line.
 
 **The Syntax:**
-```javascript
-for (initialization; condition; afterthought) {
-    // code
-}
-```
+
+`for (initialization; condition; afterthought)`
 
 * **Initialization:** Where you set your starting point (e.g., "Start at 1").
 
 * **Condition:** The rule that must stay true for the loop to continue (e.g., "Keep going as long as the number is less than 10").
 
 * **Afterthought:** How you update your progress after every lap (e.g., "Add 1 to the number").
-
 ### 2. The `while` Loop: The Open-Ended Journey
 
 The `while` loop is more flexible. It is used when you don't necessarily know how many repetitions are needed beforehand; you just know that the code should keep running as long as a specific condition is met. It checks the "gate" before every single lap. If the gate is closed (the condition is false) before the loop even starts, the code inside will never run.
 
 **The Syntax:**
-```javascript
-while (condition) {
-    // code
-}
-```
 
-* **Condition:** A simple true/false check. If it evaluates to true, the loop runs. If it’s false, the loop stops immediately.
+`while (condition)`
+
+* **Condition:** A simple true/false check. If it evaluates to true, the loop runs. If it's false, the loop stops immediately.
 
 ### 3. The `do...while` Loop: The Guaranteed Start
 
-The `do...while` loop is a variation of the `while` loop, with one critical difference: it executes its task **first** and checks the condition **second**. This ensures that the code inside the loop runs at least once, even if the condition is false from the very beginning. It’s like a "shoot first, ask questions later" approach.
+The `do...while` loop is a variation of the `while` loop, with one critical difference: it executes its task **first** and checks the condition **second**. This ensures that the code inside the loop runs at least once, even if the condition is false from the very beginning. It's like a "shoot first, ask questions later" approach.
 
 **The Syntax:**
-```javascript
-do { 
-    // code 
-} while (condition);
-```
+
+`do { ... } while (condition);`
 
 * **The "Do" block:** The task that will be executed at least one time.
 
