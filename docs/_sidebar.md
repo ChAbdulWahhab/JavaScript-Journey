@@ -10,4 +10,5 @@
 * [If-Else](09-if-else.md)
 * [Switch Case](10-switch-case.md)
 * [String Methods](11-string-methods.md)
+* [String Methods](12-arrays.md)
 * [Operators Reference](operators.md)
