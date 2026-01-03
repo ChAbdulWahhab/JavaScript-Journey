@@ -62,8 +62,18 @@ A comprehensive guide for learning JavaScript fundamentals through an organized,
    * Most commonly used methods like `slice`, `replace`, `split`, etc.
    * Understanding string immutability
 
+11. **[Arrays](docs/12-arrays.md)**
 
-
+   * An array is used to store multiple values in a single variable
+   * Array elements are stored in adjacent memory locations
+   * All elements of an array are of the same data type
+   * Each array element has a unique index number
+   * Array index starts from 0 and ends at length – 1
+   * JavaScript supports single-dimensional and multi-dimensional arrays
+   * A single-dimensional array stores elements in one row
+   * Arrays can be created using the Array object or square brackets [ ]
+   * Array elements are accessed using index values
+   * JavaScript provides built-in methods to manipulate arrays
 
 ---
 
