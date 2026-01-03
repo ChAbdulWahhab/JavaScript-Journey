@@ -57,3 +57,24 @@ An array is a set of values grouped together and identified by a single name. In
 | `push`   | Appends one or more elements to the end of an array. |
 | `sort`   | Sorts the array elements in an alphabetical order.   |
 
+## 11.27.2 Accessing Single-Dimensional Arrays
+Array elements can be accessed by using the array name followed by the index number specified in square brackets.
+
+**Access Array Elements Without Loops**
+An array element can be accessed without using loops by specifying the array name followed by the square brackets containing the index number.
+
+Code Snippet 37 demonstrates a script that stores and displays names of the students using a single-dimensional array.
+
+```
+<script>
+	var names = newArray("John", "David", "Kevin");
+	alert('ListOfStudentName:\n' + names[0] + ', ' + ' ' + names[1] + ', ' + ' ' + names[2]);
+</script>
+```
+
+In this code, `var names = new Array("John", "David", "Kevin");` declares and initializes an array. The `names[0` accesses the first array element which is `John`. The `names[1` access the second array element which is `David`.
+
+The `names[2]` accesses the third array element, which is `Kevin.`
+Figure 11.36 displays the names of the students.
+
+![Output Single Dimensional](images/Figure%2011.36-%20Output%20-%20Single-Dimensional%20Array.png)
