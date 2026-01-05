@@ -21,6 +21,9 @@
             width: 200px;
             height: auto;
         }
+        .progress {
+            background-color: #0D6EFD !important;
+        }
     </style>
 </head>
 
@@ -52,6 +55,16 @@
                 nextText: 'Next',
                 crossChapter: true,
                 crossChapterText: true,
+            },
+            tabs: {
+                persist: true,
+                sync: true,
+                theme: 'classic',
+                tabBadge: true,
+                tabComments: true,
+            },
+            zoomImage: {
+                background: 'rgba(0, 0, 0, 0.8)'
             }
         }
     </script>
@@ -62,6 +75,8 @@
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
 </body>
 
 </html>
