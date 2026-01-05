@@ -34,7 +34,7 @@ Code Snippet 36 shows different ways to declare and initialize a single-dimensio
 ```
 <script>
 	// Declaration using Array Pbject and then Initialization
-	varmartial_status = newArray(3);
+	varmartial_status = new Array(3);
 	martial_status[0] = 'Single';
 	martial_status[1] = 'Married';
 	martial_status[2] = 'Divorced';
@@ -77,4 +77,41 @@ In this code, `var names = new Array("John", "David", "Kevin");` declares and in
 The `names[2]` accesses the third array element, which is `Kevin.`
 Figure 11.36 displays the names of the students.
 
-![Output Single Dimensional](images/Figure%2011.36-%20Output%20-%20Single-Dimensional%20Array.png)
+![Output Single Dimensional](images/Figure-11.37-OUTPUT.png)
+
+**Access Array Elements With Loops**
+JavaScript allows you to access array elements by using different loops. Thus, you can access each array element by putting a counter variable of the loop as the index of an element. However, this requires the count of elements in an array. So, the `length` property can be used to determine the number of elements in an array.
+
+Code Snippet 38 demonstrates the script that creates an array to accept the marks of five subjects and display the average.
+
+```
+let sum = 0;
+var marks = new Array(5);
+for (var i = 0; i < marks.length; i++) {
+	marks[i] = parseInt(prompt("Enter Marks: ", ""));
+	sum = sum + marks[i];
+}
+alert("Average of Marks: " + (sum/marks.length));
+```
+In the code, `var marks = new Array(5)`; declares an array of size 5. It displays a prompt box that accepts the marks for a subject in each iteration. Then, the code calculates and displays the average marks.
+
+Figure 11.37 displays the average of the marks, 90, 75, 85, 95, and 82 accepted from the user in the prompt box.
+![Access Array Elements](images/Figure-11.28-OUTPUT.png)
+## 11.27.3 Multi-Dimensional Array
+Consider a scenario to store the employee IDs of 100 employees and their salary structure. The salary structure will include the basic salary, allowances, HRA, and the total gross salary. Now, if a single dimensional array is used, then two separate arrays must be created for storing employee IDs and salaries However, using a multi-dimensional array, both IDs and salaries are stored in just one array.
+
+A multi-dimensional array stores a combination of values of a single type in two or more dimensions. These dimensions are represented as rows and columns similar to those of a Microsoft Excel sheet. A two-dimensional array is an example of the multi-dimensional array.
+
+Figure 11.38 shows the representation of a multi-dimensional array.
+![Access Array Elements](images/Figure-11.38-EXCEL.png)
+
+## 11.28 Array Methods
+An array is a set of values grouped together and identified by a single name. In JavaScript, the `Array` object allows you to create arrays. It provides the `length` property that allows you to determine the number of elements in the array. Various methods of the `Array` object allow to access and manipulate the array elements.
+
+| Method   | Description                                          |
+| -------- | ---------------------------------------------------- |
+| `concat` | Combines one or more array variables.                |
+| `join`   | Joins all the array elements of an array.            |
+| `pop`    | Retrieves the last element of an array.              |
+| `push`   | Appends one or more elements to the end of an array. |
+| `sort`   | Sorts the array elements in an alphabetical order.   |
