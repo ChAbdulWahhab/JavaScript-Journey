@@ -105,6 +105,64 @@ A multi-dimensional array stores a combination of values of a single type in two
 Figure 11.38 shows the representation of a multi-dimensional array.
 ![Access Array Elements](images/Figure-11.38-EXCEL.png)
 
+A two-dimensional array is an array of arrays. This means, for a two-dimensional array, first a main array is declared and then, an array is created for each element of the main array.
+ The syntax to declare a two-dimensional array is follows:
+ **Syntax**
+ ```
+ var variable_name = new Array(size); // Declaration
+ variable_name[index] = new Array('value1', 'value2'..);
+ ```
+ where,
+ `variable_name`: Is the name of the array.
+ `index`: Is the index position.
+ `value1`: Is the value at the first column.
+ `value2`: Is the value at the second column.
+
+## Accessing Two-Dimensional Arrays
+Multi-dimensional arrays can be accessed by using the index of main array variable along with index of sub-array.
+
+**Access Array Elements Without Loops** 
+Code Snippet 39:
+```
+<script>
+	var employees = new Array(3);
+	employees[0] = new Array('John', '25', 'New Jersey');
+	employees[1] = new Array('David', '21', 'California');
+	document.write('<h3>Employee Details</h3>');
+	document.write('<p><b>Name: </b>' + employees[0][0] + '</p>');
+	document.write('<p><b>Location: </b>' + employees[0][2] + '</p>');
+	document.write('<p><b>Name: </b>' + employees[1][0] + '</p>');
+	document.write('<p><b>Location: </b>' + employees[1][2] + '</p>');
+</script>
+```
+In the code, `var employee = new Array(3)` creates an array of size 3. The declaration `employee[0] = new Array('John', '23', 'New Jersey')` creates an array at the 0th row of the `employees.array` Similarly, `employees[1] = new Array('David', '21', 'California')` creates an array at the first row of the `employee` array.
+
+Access Array Elements With Loops
+```
+<script>
+	var products = new Array(2);
+	products[0] = new Array('Monitor', '236.73');
+	products[1] = new Array('Keyboard', '45.50');
+	document.write(`
+		<table border=1>
+			<tr>
+				<th>Name</th>
+				<th>Price</th>
+			</tr>
+	
+			for(var i = 0; i < products.length i++) {
+				document.write('<tr>');
+	
+				for(var j = 0; j < products.[i].length; j++) {
+					document.write('<td>' + products[i][j] + '</td>')
+				}
+	
+				document.write('</tr>');
+			}
+		</table>
+	`);
+```
+In the code, `products[0] = new Array('Monitor', '236.75')` creates an array at the 0th row of the `products` array. Similarly, `products[1] = new Array('Keyboard', '45.50')` creates an array at the first row of the `products` array. The condition, `i < products.length`, specifies that the counter variable `i` should be less than the number of rows in the array variable, `products`. For each row in the array, the condition, `j < products[i].length` specifies that the counter variable `j`, should be less than the number of columns specified the `ith` row of the array variable, `products.` Finally, `document.write("<td>" + products[i][j] + "</td>")` displays the values at the `ith` row and `jth` column of array variable, products.
 ## 11.28 Array Methods
 An array is a set of values grouped together and identified by a single name. In JavaScript, the `Array` object allows you to create arrays. It provides the `length` property that allows you to determine the number of elements in the array. Various methods of the `Array` object allow to access and manipulate the array elements.
 
@@ -115,3 +173,26 @@ An array is a set of values grouped together and identified by a single name. In
 | `pop`    | Retrieves the last element of an array.              |
 | `push`   | Appends one or more elements to the end of an array. |
 | `sort`   | Sorts the array elements in an alphabetical order.   |
+## 11.29 *for...in Loop*
+The `for...in` loop is an extension of the `for` loop. It enables to perform specific actions on the arrays of objects. The loop reads each element in the specified array and executes a block of code only once for each element in the array.
+
+**Syntax**
+```
+for(variable_name in array_name) {
+	// statements;
+}
+```
+where,
+`variable_name`: Is the name of the variable.
+`array_name`: Is the array name.
+
+```
+<script>
+	var books = new Array('Beginning CSS 3.0', 'Introduction to HTML5', 'HTML5 in Mobile Developent');
+	document.write('<h3>List of Books</h3>');
+	
+	for(var i in books) {
+		document.write(books[i] + '<br/>');
+	}
+</script>
+```
