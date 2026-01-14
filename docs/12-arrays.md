@@ -143,24 +143,27 @@ Access Array Elements With Loops
 	var products = new Array(2);
 	products[0] = new Array('Monitor', '236.73');
 	products[1] = new Array('Keyboard', '45.50');
-	document.write(`
+
+	document.writeln(`
 		<table border=1>
 			<tr>
 				<th>Name</th>
 				<th>Price</th>
 			</tr>
-	
-			for(var i = 0; i < products.length i++) {
-				document.write('<tr>');
-	
-				for(var j = 0; j < products.[i].length; j++) {
-					document.write('<td>' + products[i][j] + '</td>')
-				}
-	
-				document.write('</tr>');
-			}
-		</table>
 	`);
+
+	for(var i = 0; i < products.length; i++) {
+		document.writeln('<tr>');
+
+		for(var j = 0; j < products[i].length; j++) {
+			document.writeln('<td>' + products[i][j] + '</td>');
+		}
+
+		document.writeln('</tr>');
+	}
+
+	document.writeln('</table>');
+</script>
 ```
 In the code, `products[0] = new Array('Monitor', '236.75')` creates an array at the 0th row of the `products` array. Similarly, `products[1] = new Array('Keyboard', '45.50')` creates an array at the first row of the `products` array. The condition, `i < products.length`, specifies that the counter variable `i` should be less than the number of rows in the array variable, `products`. For each row in the array, the condition, `j < products[i].length` specifies that the counter variable `j`, should be less than the number of columns specified the `ith` row of the array variable, `products.` Finally, `document.write("<td>" + products[i][j] + "</td>")` displays the values at the `ith` row and `jth` column of array variable, products.
 ## 11.28 Array Methods
