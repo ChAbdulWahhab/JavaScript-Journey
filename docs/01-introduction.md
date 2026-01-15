@@ -1,3 +1,27 @@
+## Welcome to the Session, JavaScript-I
+This session describes the scripting languages. The session also explores the JavaScript language and versions used in the language. It further describes the variables, data types, methods, built in functions, event handling.
+
+In this Session, you will learn to:
+- Explain scripting
+- Explain the JavaScript language
+- Explain the client-side and server-side JavaScript
+- List the variables and data types in JavaScript.
+- Describe the JavaScript methods to display information
+- Explain escape sequence and built in functions in JavaScript
+- Explain events and event handling
+- Explain operators and their types in JavaScript
+- Explain regular expressions in JavaScript
+- Explain decision-making statements in JavaScript
+- Explain while loop
+- Explain for loop
+- Explain do...while loop
+- Explain break and continue statement
+- Explain single-dimensional arrays
+- Explain multi-dimensional arrays
+- Explain for..in loop
+
+---
+
 ## 11.1 Introduction
 
 Consider an organization that provides a Website that allows its customers to view their products. The company has received frequent customer feedbacks to provide the shopping facility online. Therefore, the company has decided to add the shopping facility in their Website by creating dynamic Web pages. These Web pages will allow the user to shop for the products online. For example, details such as credit card number, email, and phone number entered by the customer must be in a proper format. Further, the developer also requires to retrieve the chosen products and their quantity to calculate the total cost.

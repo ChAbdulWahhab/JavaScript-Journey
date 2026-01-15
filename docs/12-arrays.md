@@ -199,3 +199,9 @@ where,
 	}
 </script>
 ```
+
+In **Session 1**, we covered all the fundamental concepts of JavaScript. This session included an overview of JavaScript, variables, data types, built-in functions, events, mouse events, increment and decrement operators, loops, conditional statements (if-else and switch case), string methods, arrays, and operators.
+
+By completing this session, you now have a **strong basic understanding of JavaScript**, which will help you move forward to more advanced topics and real-world web development.
+
+**🎉 Session 1: JavaScript Basics Successfully Completed 🎉**
