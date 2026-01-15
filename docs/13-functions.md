@@ -13,3 +13,8 @@ In this Session, you will learn to:
 - Explain JSON
 
 ---
+
+## 12.1 Introduction
+Consider a scenario where a Web page has been designed to greet the user with his/her name on the click of a button. A code can be used here to accomplish this task, but may result in the same output on repetitive executions. However, writing these statements each time for the same action is tedious, time consuming, and error prone.
+
+To make the code more task-oriented and manageable, JavaScript allows to group statements before they are actually invoked. This can be achieved by using the concept of functions. A function is a reusable block of code that is executed on the occurrence of an event. The event can be a user action on the page or a call within the script.
