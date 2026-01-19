@@ -13,5 +13,6 @@
 * [Switch Case](10-switch-case.md)
 * [String Methods](11-string-methods.md)
 * [Arrays](12-arrays.md)
+
 ### JavaScript – II
 * [Functions](13-functions.md)
