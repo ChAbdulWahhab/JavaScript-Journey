@@ -15,4 +15,4 @@
 * [Arrays](12-arrays.md)
 
 ### JavaScript – II
-* [Functions](13-functions.md)
+  * [Functions – Session 2](13-functions.md)
