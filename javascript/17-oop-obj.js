@@ -43,6 +43,18 @@ let myCar2 = new Model("Ford", "Mustang");
 // document.writeln(myCar2.show());
 
 /*===============================
+    Static method in OOPs
+=================================*/
+
+class Person{
+    static hello(a, b) {
+        return a + b;
+    }
+}
+
+document.writeln(Person.hello(12, 12));
+
+/*===============================
     Getters and Setters in OOPs
 =================================*/
 
