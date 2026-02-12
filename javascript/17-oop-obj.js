@@ -52,10 +52,38 @@ class Person{
     }
 }
 
-document.writeln(Person.hello(12, 12));
+// document.writeln(Person.hello(12, 12));
 
 /*===============================
     Getters and Setters in OOPs
 =================================*/
 
-// Here...
+class Computer {
+    constructor(brand) {
+        this.pcname = brand;
+    }
+    get pcnam() {
+        return this.pcname;
+    }
+    set pcnam(x) {
+        this.pcname = x;
+    }
+}
+
+const obj = new Computer("HP");
+document.writeln(obj.pcnam);
+
+class Courier {
+    constructor(parcel) {
+        this.box = parcel;
+    }
+    get lekeana() {
+        return this.box;
+    }
+    set lekeana(cstm) {
+        this.box = cstm;
+    }
+}
+
+const obj2 = new Courier("Shoes"); // TCS
+document.writeln(obj2.lekeana);
