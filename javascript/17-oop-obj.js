@@ -46,13 +46,13 @@ let myCar2 = new Model("Ford", "Mustang");
     Static method in OOPs
 =================================*/
 
-class Person{
+class DemoStatic{
     static hello(a, b) {
         return a + b;
     }
 }
 
-// document.writeln(Person.hello(12, 12));
+// document.writeln(DemoStatic.hello(12, 12));
 
 /*===============================
     Getters and Setters in OOPs
@@ -71,19 +71,67 @@ class Computer {
 }
 
 const obj = new Computer("HP");
-document.writeln(obj.pcnam);
+// document.writeln(obj.pcnam);
 
 class Courier {
     constructor(parcel) {
         this.box = parcel;
     }
-    get lekeana() {
+    get fetch() {
         return this.box;
     }
-    set lekeana(cstm) {
+    // Infinite Recursion
+    set fetch(cstm) {
         this.box = cstm;
     }
 }
 
 const obj2 = new Courier("Shoes"); // TCS
-document.writeln(obj2.lekeana);
+// document.writeln(obj2.fetch);
+
+// Solving Infinite Recursion
+
+class UserProfile {
+  constructor(name) {
+    this.name = name; 
+  }
+
+  get name() {
+    return this._name.toUpperCase();
+  }
+
+  set name(value) {
+    if (value.length < 3) {
+    //   console.log("Name must be greator than 3");
+    } else {
+    //   console.log("Good News! Name is set.");
+      this._name = value;
+    }
+  }
+}
+
+const user1 = new UserProfile("Ali");
+
+user1.name = "jos";
+// console.log(user1.name);
+
+/*===============================
+    Asynchronous Programming
+=================================*/
+
+console.log("Zainab (Present)");
+
+setTimeout(function() {
+    console.log("Muhammad Ali (Absent)");
+    console.log("Arham (Absent)");
+    console.log("Salman (Absent)");
+}, 10000);
+
+console.log("Shah Zubair (Present)");
+
+
+setTimeout(myFunc, 2000); // Delay 2 seconds
+
+function myFunc() {
+    console.log("I love programming!!");
+}
