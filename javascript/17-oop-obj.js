@@ -114,24 +114,3 @@ const user1 = new UserProfile("Ali");
 
 user1.name = "jos";
 // console.log(user1.name);
-
-/*===============================
-    Asynchronous Programming
-=================================*/
-
-console.log("Zainab (Present)");
-
-setTimeout(function() {
-    console.log("Muhammad Ali (Absent)");
-    console.log("Arham (Absent)");
-    console.log("Salman (Absent)");
-}, 10000);
-
-console.log("Shah Zubair (Present)");
-
-
-setTimeout(myFunc, 2000); // Delay 2 seconds
-
-function myFunc() {
-    console.log("I love programming!!");
-}
